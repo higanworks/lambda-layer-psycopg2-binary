@@ -2,6 +2,11 @@
 
 install psycopg2-binary
 
+```
+import psycopg2
+...
+```
+
 ## requirements
 
 - docker (or compatible runtime)
