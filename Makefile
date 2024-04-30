@@ -18,7 +18,6 @@ build:
 		--entrypoint $(PIP_COMAND) \
 		$(CONTAINER_IMAGE) \
 		install -r requirements.txt -t python
-	find python/ -name '*.pyc' -delete
 	find python/ -name '__pycache__' -type d  -delete
 	zip -r layer.zip python/
 	unzip -l layer.zip
