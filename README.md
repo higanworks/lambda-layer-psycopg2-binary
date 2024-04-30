@@ -24,6 +24,7 @@ $ AWS_PROFILE=`YOUR_PROFILE` make -e push
 export AWS_PROFILE=...
 export AWS_REGION=...
 export ARCHITECTURE=[amd64|arm64]
+export PYTHON_VERSION=3.xx
 ```
 
 check Makefile.
