@@ -29,5 +29,5 @@ deploy: build
 		--description "psycopg2-binary $(PYTHON_VERSION) $(ARCHITECTURE)" \
 		--zip-file fileb://layer.zip \
 		--compatible-runtimes python$(PYTHON_VERSION) \
-		--compatible-architectures $(ARCHITECTURE)
+		--compatible-architectures $(subst amd64,x86_64,$(ARCHITECTURE))
 	rm -rf python/ layer.zip
